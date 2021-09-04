@@ -5,6 +5,9 @@ class MyHomeController extends GetxController{
 
   increment(){
     counter++;
+    if(counter.toInt() == 10){
+      Get.toNamed("/second");
+    }
     update();
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learning_getx/ui_screens/second_screen.dart';
 
 import 'ui_screens/home.dart';
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: "/home",
       getPages: [
-        GetPage(name: "/home", page: ()=>MyHome())
+        GetPage(name: "/home", page: ()=>MyHome()),
+        GetPage(name: "/second", page: ()=>SecondScreen())
       ],
       home: MyHome(),
     );
